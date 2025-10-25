@@ -14,8 +14,8 @@ spec:
         app: app-fastapi
     spec:
       containers:
-      - name: app-fastapi # Este é o início do item da lista (-)
-        image: guestivalet/app-fastapi:xxx # Alinhado perfeitamente com 'name'
+      - name: app-fastapi
+        image: guestivalet/app-fastapi:latest
         ports:
         - containerPort: 80
 
