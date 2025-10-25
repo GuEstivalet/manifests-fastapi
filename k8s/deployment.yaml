@@ -30,7 +30,7 @@ spec:
 
       - name: app-fastapi
 
-      image: guestivalet/app-fastapi:47e67c82ea71e84e14b155bb1fb0923a6a52fd13
+      image: guestivalet/app-fastapi:d4503cdc3c60e07e7f2b87f052e30f42edc7d02e
 
         ports:
 
