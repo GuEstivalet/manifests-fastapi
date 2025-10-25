@@ -17,6 +17,6 @@ spec:
       containers:
       - name: hello-app
         # SUBSTITUA ESTA TAG PELA TAG SHA GERADA PELO SEU CI/CD
-      image: guestivalet/app-fastapi:6bdc95a9151d2f9eef7fbc6425612117b92c3933
+      image: guestivalet/app-fastapi:5e04a470b16c3188f2716c2ce388fa9e3cf4e52f
         ports:
         - containerPort: 8000
