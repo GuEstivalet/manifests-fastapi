@@ -1,37 +1,21 @@
+# deployment.yaml
 apiVersion: apps/v1
-
 kind: Deployment
-
 metadata:
-
   name: app-fastapi-deployment
-
 spec:
-
   replicas: 1
-
   selector:
-
     matchLabels:
-
       app: app-fastapi
-
   template:
-
     metadata:
-
       labels:
-
         app: app-fastapi
-
     spec:
       containers:
-
-      - name: app-fastapi
-
-        image: guestivalet/app-fastapi:xxx
-
+      - name: app-fastapi # Este é o início do item da lista (-)
+        image: guestivalet/app-fastapi:xxx # Alinhado perfeitamente com 'name'
         ports:
-
         - containerPort: 80
 
