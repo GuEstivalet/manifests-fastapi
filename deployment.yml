@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: app-fastapi-deployment
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: app-fastapi
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: app-fastapi
+
+    spec:
+
+      containers:
+
+      - name: app-fastapi
+
+        image: guestivalet/app-fastapi:xxx
+
+        ports:
+
+        - containerPort: 80
+
