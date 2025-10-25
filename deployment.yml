@@ -25,7 +25,6 @@ spec:
         app: app-fastapi
 
     spec:
-
       containers:
 
       - name: app-fastapi
