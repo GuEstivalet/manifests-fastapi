@@ -1,38 +1,22 @@
 apiVersion: apps/v1
-
 kind: Deployment
-
 metadata:
-
-  name: app-fastapi-deployment
-
+  name: hello-app-deployment
+  labels:
+    app: hello-app
 spec:
-
   replicas: 1
-
   selector:
-
     matchLabels:
-
-      app: app-fastapi
-
+      app: hello-app
   template:
-
     metadata:
-
       labels:
-
-        app: app-fastapi
-
+        app: hello-app
     spec:
-
       containers:
-
-      - name: app-fastapi
-
-      image: guestivalet/app-fastapi:d4503cdc3c60e07e7f2b87f052e30f42edc7d02e
-
+      - name: hello-app
+        # SUBSTITUA ESTA TAG PELA TAG SHA GERADA PELO SEU CI/CD
+        image: guestivalet/app-fastapi:SUA_TAG_SHA 
         ports:
-
-        - containerPort: 80
-
+        - containerPort: 8000
